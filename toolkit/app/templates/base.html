@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - DSE Toolkit</title>
+      {% else %}
+      <title>Welcome to DSE Toolkit</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Toolkit: 
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="{{ url_for('firepower') }}">Firepower</a>
+            <a href="{{ url_for('webex') }}">Webex</a>
+            <a href="{{ url_for('meraki') }}">Meraki</a>
+        </div>
+        <hr>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+</html>

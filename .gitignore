@@ -1,0 +1,2 @@
+#Ignore the DB element of the TOOLKIT app
+*.db
