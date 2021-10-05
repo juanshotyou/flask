@@ -1,0 +1,198 @@
+2021-10-02 15:32:33,222 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 15:36:59,878 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 15:37:03,444 ERROR: Exception on / [GET] [in /mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/routes.py", line 11, in index
+    return render_template("index.html", title="Home")
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/base.html", line 20, in top-level template code
+    <a href="{{ url_for('webex') }}">Webex</a>
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/werkzeug/routing.py", line 2305, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'webex'. Did you mean 'index' instead?
+2021-10-02 15:37:46,696 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 15:51:13,128 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 15:51:17,814 ERROR: Exception on / [GET] [in /mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/routes.py", line 19, in index
+    return render_template("index.html", title="Home")
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-10-02 15:52:59,001 ERROR: Exception on / [GET] [in /mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/routes.py", line 19, in index
+    return render_template("index.html", title="Home")
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-10-02 15:53:01,631 ERROR: Exception on / [GET] [in /mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/routes.py", line 19, in index
+    return render_template("index.html", title="Home")
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-10-02 15:54:22,290 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 15:54:22,784 ERROR: Exception on / [GET] [in /mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/routes.py", line 19, in index
+    return render_template("index.html", title="Home")
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-10-02 15:55:22,466 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 15:56:18,367 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 15:56:45,770 ERROR: Exception on /firepower [GET] [in /mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py:1454]
+Traceback (most recent call last):
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/routes.py", line 66, in firepower
+    return render_template("index.html", title="Firepower")
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 147, in render_template
+    return _render(
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/templates/index.html", line 6, in block 'content'
+    {{ form.hidden_tag() }}
+  File "/mnt/c/Users/vladr/Desktop/DevNet/devnet-venv/lib/python3.8/site-packages/jinja2/environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-10-02 16:00:35,240 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 16:01:22,185 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:27]
+2021-10-02 16:16:33,515 INFO: Toolkit startup [in /mnt/c/Users/vladr/Desktop/DevNet/flask/toolkit/app/__init__.py:29]
